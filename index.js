@@ -9,7 +9,7 @@ const app = express()
 // initialise the database connection
 const pgPromise = require('pg-promise')({})
 const db = pgPromise({
- connectionString:process.env.DATABASE_URL || 'postgres://postgres:2007121214@localhost:5432/greetings', 
+ connectionString:process.env.DATABASE_URL || 'postgres://postgres:2007121214@localhost:5432/users', 
   ssl: {
     rejectUnauthorized: false
   }
