@@ -1,0 +1,8 @@
+<h1>Listed Users</h1>
+ <div class="row">
+     {{#each uniqueNames}}
+        <ul>
+            <li><a href="/listedUser/{{name}}">{{name}}</a></li>
+        </ul>
+    {{/each}}
+ </div>
