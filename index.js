@@ -34,11 +34,10 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
 
-app.get('/', routes.getHome)
-app.post('/calculate_bill', routes.postCalcBill)
-app.get('/price_plans', routes.getPricePlans)
-app.get('/link_user', routes.getLinkedUser)
-app.post('/link_user', routes.postLinkedUser)
+app.get('/', routes.Home)
+app.get('/price_plans', routes. pricePlans)
+app.get('user_plan', routes. allocate)
+app.post('//user_plan', routes. allocate)
 
 
 
