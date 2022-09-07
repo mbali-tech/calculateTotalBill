@@ -1,24 +1,34 @@
-<h2>Phone Bill Widget</h2>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculate Phone Bill</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+
+  <body>
+    <div class="navigation">
+      <ul class="navLinks"> <a href="/"><li>Home</li></a> <a href="/price_plans"><li>Price Plans</li></a> <a href="/link_user"><li>Link User</li></a>
+      </ul>
+    </div>
+
+    <h2>Phone Bill Widget</h2>
 
 <p>Calculate Phone bill for user</p>
 
-<form action="/">
-  <label for="User">user name:</label>
-  <input type="text" id="Username" name="Username"><br><br>
-  <label for="UsageString">Usage string:</label>
-  <input type="text" id="Usagestring" name="Usagestring"><br><br>
-  <input type="submit" value="Submit">
+<div class="home">
+  <form action="/" method="POST">
+  <input type="text" name="username" class="username inputs" placeholder="Enter username" />
+
+ <input type="text" name="usageString" class="usageString inputs"  placeholder="Enter usage string" />
+  
+  <button type="submit" class="calculate">Calculate</button>
 </form>
 
+<h4>Phone bill total</h4>
+        <div class="totalCost">{{cost}}</div>
 
-<h2>Allocate Price Plan To Username</h2>
 
-<form action="/">
-  <label for="cars">Price Plan</label>
-  <select id="cars" name="cars">
-    <option value="sms 100">sms 100</option>
-    <option value="call 100">call 100</option>
-    <option value="text-me">text-me</option>
-  </select>
-  <input type="Allocate">
-</form>
+</body>
+</html>

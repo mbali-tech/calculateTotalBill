@@ -1,11 +1,15 @@
-CREATE TABLE IF NOT EXISTS price_plan(
-    ID SERIAL PRIMARY KEY,
-    usage VARCHAR(10) NOT NULL
+
+create table users (
+    id serial primary key,
+    username text not null,
+    plan_id integer not null
+)
+    
 );
 
-CREATE TABLE IF NOT EXISTS users(
-    ID SERIAL PRIMARY KEY,
-    username VARCHAR(10) NOT NULL,
-    price_plan_id INT,
-    FOREIGN KEY(price_plan_id) REFERENCES Price_plan(ID) ON DELETE CASCADE
+create table price_plan (
+    id serial not null primary key ,
+    plan_name text not null,
+    sms_price int not null,
+    call_price int not null
 );

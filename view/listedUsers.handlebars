@@ -1,8 +1,14 @@
-<h1>Listed Users</h1>
- <div class="row">
+<div class="navigation">
+      <ul class="navLinks">
+        <a href="/"><li>Home</li></a>  <a href="/price_plans"><li>Price Plans</li></a> <a href="/link_user"><li>Link User</li></a>
+      </ul>
+    </div>
+    
+    <h1>Listed Users With Price Plan</h1>
+ <div class="ListOfUsers">
      {{#each uniqueNames}}
         <ul>
-            <li><a href="/listedUser/{{name}}">{{name}}</a></li>
+            <li>this.username</li>
         </ul>
     {{/each}}
  </div>
